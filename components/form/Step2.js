@@ -21,8 +21,9 @@ const Step2 = ({ setStep }) => {
                     Sign Up
                 </Typography>
                 <TextField id="standard-basic" label="Phone Number" variant="standard" className='w-full' />
-                <TextField id="standard-basic" label="Email Address" variant="standard" className='w-full' />
-                <Button type='submit' variant="contained" className='mt-4 mx-auto block bg-blue-600'>Next Step</Button>
+                <TextField id="standard-basic" type="email" label="Email Address" variant="standard" className='w-full' />
+                <Button onClick={() => setStep(0)} variant="text" className='mt-4 mr-2'>Back</Button>
+                <Button type='submit' variant="contained" className='mt-4  bg-blue-600'>Next Step</Button>
             </form>
         </div>
     );

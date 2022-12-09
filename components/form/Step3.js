@@ -10,6 +10,7 @@ const Step3 = ({ setStep }) => {
             ...signUp,
             password: e.target[0].value
         })
+        console.log(signUp);
 
     };
     console.log(signUp)
@@ -20,7 +21,8 @@ const Step3 = ({ setStep }) => {
                     Sign Up
                 </Typography>
                 <TextField id="standard-basic" type="password" label="Password" variant="standard" className='w-full' />
-                <Button type='submit' variant="contained" className='mt-4 mx-auto block bg-blue-600'>Sign Up</Button>
+                <Button onClick={() => setStep(1)} variant="text" className='mt-4 mr-2'>Back</Button>
+                <Button type='submit' variant="contained" className='mt-4  bg-blue-600'>Sign Up</Button>
             </form>
         </div>
     );
